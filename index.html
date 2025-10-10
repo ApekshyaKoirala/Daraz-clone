@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="slider">
+        <div class="slide">
+    <img id="slide" src="images/image1.png" alt="sliderimage">
+    <img src="images/image2.png" id="slide" alt="" style="display: none;">
+    <img src="images/image3.png" id="slide" alt="" style="display: none;">
+    <button id="prev" class="btn">⟨</button>
+    <button id="next" class="btn">⟩</button>
+    </div>
+    </div>
+</body>
+<script>
+    fetch("header.html")
+    .then(res=>res.text())
+    .then(data=>{
+        document.getElementById("header").innerHTML=data;
+    })
+</script>
+<script src="script.js"></script>
+</html>

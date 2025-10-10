@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="snupcont">
+    <div id="header"></div>
+    <div class="snup">
+          
+    <div class="signupform">
+      
+        <form class="form"action="submit">
+            <h2>Signup Form</h2>
+            <label for="name"></label>
+            <input type="text" placeholder="Enter your full name" required>
+            <br>
+            <label for="email"></label>
+            <input type="text" placeholder="Enter your email" required>
+            <br>
+            <label for="password"></label>
+            <input type="password" placeholder="Enter your password" required>
+            <br>
+            <label for="password"></label>
+            <input type="password" placeholder="Confirm password" required>
+             <button class="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+    fetch("header.html")
+    .then(res=>res.text())
+    .then(data=>{
+        document.getElementById("header").innerHTML=data;
+    })
+</script>
+</html>
