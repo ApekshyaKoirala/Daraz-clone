@@ -33,7 +33,7 @@ const logsigns = document.querySelectorAll("#login, #signup")
 logsigns.forEach(button => {
     button.addEventListener("click", function (e) {
         e.preventDefault();
-        // e.stopPropagation();
+        
         const maincontent = document.getElementsByClassName("cover")[0]
         maincontent.classList.add("blur")
         if (e.currentTarget.id === "login") {
@@ -55,15 +55,52 @@ function show(componentFile) {
         container.innerHTML = data;
           container.style.display = "block"
 
-          const btns = container.getElementsByClassName("submit");
-          Array.from(btns).forEach((btn) => {
-            btn.addEventListener("click", function (e) {
+          const submitbtns = container.getElementsByClassName("submit");
+          Array.from(submitbtns).forEach((submitbtn) => {
+            submitbtn.addEventListener("click", function (e) {
               e.preventDefault();
-              const inputs = container.querySelectorAll(".userinput");
-              const values = [];
-                inputs.forEach((input) => values.push(input.value));
+                const inputs = container.querySelectorAll(".userinput");
+                const name = inputs[0].value;
+                const email = inputs[1].value;
+                const password = inputs[2].value;
+                const confirmpassword = inputs[3].value;
+             
+                
+                if (password === confirmpassword) {
+                     const users = JSON.parse(
+                       localStorage.getItem("users") || "[]"
+                     );
+                     const newUser = { name, email, password, confirmpassword };
+                    users.push(newUser)
+                    localStorage.setItem("users", JSON.stringify(users))
+                }
+                else {
+                    // passwords doesn't match
+                }
                 removeComponent();
-            //   console.log(values);
+            
+            });
+          });
+          const loginbtns = container.getElementsByClassName("login");
+          Array.from(loginbtns).forEach((loginbtn) => {
+            loginbtn.addEventListener("click", function (e) {
+              e.preventDefault();
+                const inputs = container.querySelectorAll(".userinput");
+                 const email = inputs[0].value;
+                 const password = inputs[1].value;
+                
+               const users = JSON.parse(localStorage.getItem("users") || "[]");
+               
+                if (users.find(user => user.email === email && user.password === password)) {
+                     console.log("login success")
+                }
+                else {
+                     console.log("login failed")
+                }
+               
+               
+                removeComponent();
+            
             });
           });
 
