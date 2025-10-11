@@ -4,25 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header"></div>
+    <div class="cover">
+    <div id="header"> <div class="container">
+        <header class="header">
+            <nav id="head">
+                <div class="box">
+                <span>SAVE MORE ON APP</span>
+                <span>BECOME A SELLER</span>
+                <span>HELP & SUPPORT</span>
+                <a id="login" href="" >
+                <span>LOGIN</span></a>
+                <a id="signup"  href="">
+                <span>SIGNUP</span></a>
+                <span>LANGUAGE</span>
+                </div>
+            </nav>
+            <div class="input">
+                <nav id="input">
+
+                <a href="index.html">
+                <img class="logo"src="logo.png" alt=""></a>
+                <div class="searchbar">
+                <label for="search"></label>
+                <input type="text" id="search" placeholder="Search in Daraz">
+                <button ><img class="searchlogo" src="search.png" alt=""></button>
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M6 6h15l-1.5 9h-11z"></path>
+  <circle cx="9" cy="20" r="1"></circle>
+  <circle cx="19" cy="20" r="1"></circle>
+  <path d="M6 6L4 2"></path>
+             
+            
+
+           
+</svg>
+</nav>
+
+
+
+            </div>
+        </header>
+    </div></div>
     <div class="slider">
         <div class="slide">
-    <img id="slide" src="images/image1.png" alt="sliderimage">
-    <img src="images/image2.png" id="slide" alt="" style="display: none;">
-    <img src="images/image3.png" id="slide" alt="" style="display: none;">
+    <img  class="slide-img" src="images/image1.png" alt="sliderimage">
+    <img src="images/image2.png" class="slide-img"  alt="" style="display: none;">
+    <img src="images/image3.png" class="slide-img"  alt="" style="display: none;">
     <button id="prev" class="btn">⟨</button>
     <button id="next" class="btn">⟩</button>
     </div>
+    
     </div>
+    </div>
+    </div>
+    <div id="modalContainer"></div>
 </body>
-<script>
-    fetch("header.html")
-    .then(res=>res.text())
-    .then(data=>{
-        document.getElementById("header").innerHTML=data;
-    })
-</script>
+
 <script src="script.js"></script>
 </html>
