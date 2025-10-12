@@ -89,11 +89,27 @@ function show(componentFile) {
                  const email = inputs[0].value;
                  const password = inputs[1].value;
                 
-               const users = JSON.parse(localStorage.getItem("users") || "[]");
-               
-                if (users.find(user => user.email === email && user.password === password)) {
-                     console.log("login success")
+              const users = JSON.parse(localStorage.getItem("users") || "[]");
+              
+              const foundUser= users.find(user => user.email === email && user.password === password)
+              if (foundUser) {
+                currentUser = foundUser.name;
+                console.log("login success");
+                const login = document.getElementById("login");
+                const signup=document.getElementById("signup")
+                if (login) {
+                  const link = document.createElement("a");
+                  link.href = "#";
+                  const span = document.createElement("span");
+                  span.id = "username";
+                  link.appendChild(span);
+                  login.replaceWith(link)
+                  span.textContent = currentUser.toUpperCase()
                 }
+                if (signup) {
+                  signup.remove();
+                }
+              }
                 else {
                      console.log("login failed")
                 }
