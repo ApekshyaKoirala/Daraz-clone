@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: rgb(235, 233, 233);
 }
 
 .container{
@@ -95,12 +95,34 @@ input{
 
 .slider img{
     
-    height: 450px;
-    width: 50vw;
+    height: 400px;
+    width: 60vw;
   
     object-fit: cover;
      
     
+}
+.add{
+    
+   background: linear-gradient(135deg, #ffffff, #eaba9a); /* faint orange gradient */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    height: 400px;
+    width: 16vw; 
+   
+    
+    
+    
+  
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add img{
+    height: 49px;
+    width: 70px;
 }
 
 .slider{
@@ -137,7 +159,7 @@ input{
 #next{
 
    right: 0;
-  background-color: rgb(135, 120, 120);
+  background-color: rgb(203, 187, 187);
  border-radius: 20px 0 0 20px;
 
 }
@@ -226,3 +248,29 @@ a{
     text-decoration: none;
 }
 
+.card{
+    background-color: white;
+    height: 250px;
+    width: 220px;
+    margin: 20px;
+   border-radius: 5px;
+ 
+   
+    
+    
+}
+.card img{
+    height: 70%;
+    width: 100%;
+   
+}
+
+#price{
+    /* margin: 2px; */
+    padding: 5px;
+    color: red;
+    
+}
+.info{
+    padding: 5px;
+}
