@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="cover">
-    <div id="header"> <div class="container">
+    <div id="header">
+         <div class="container">
         <header class="header">
             <nav id="head">
                 <div class="box">
@@ -25,6 +26,7 @@
                 
                 <span>LANGUAGE</span>
                 </div>
+                
             </nav>
             <div class="input">
                 <nav id="input">
@@ -35,7 +37,7 @@
                 <label for="search"></label>
                 <input type="text" id="search" placeholder="Search in Daraz">
                 <button ><img class="searchlogo" src="search.png" alt=""></button>
-             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+             <svg id="cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
   <path d="M6 6h15l-1.5 9h-11z"></path>
   <circle cx="9" cy="20" r="1"></circle>
   <circle cx="19" cy="20" r="1"></circle>
@@ -51,7 +53,8 @@
 
             </div>
         </header>
-    </div></div>
+    </div>
+</div>
     <div class="slider">
         <div class="slide">
     <img  class="slide-img" src="images/image1.png" alt="sliderimage">
@@ -60,15 +63,15 @@
     <button id="prev" class="btn">⟨</button>
     <button id="next" class="btn">⟩</button>
     </div>
-    <div class="add">
-        <div class="top">
+        <div class="add">
+   <div class="top">
         <img src="smalllogo.png" alt="">
-    <span>Download the app</span>
+    Download the app
     </div>
     <div class="body">
         <div class="color">
 
-            <span style="padding: 5px;">4.8 Rating</span>
+            <span >4.8 Rating</span>
             <span id="download">Download app</span>
             <div class="icon">
             <span id="delivery"><img src="delivery.png" alt=""><span>Free Delivery</span></span>
@@ -76,10 +79,10 @@
             </div>
         </div>
         <div class="app">
-            <div ><img class="qr"src="qr.png" style="height: 110px; width: 110px;" alt=""></div>
+            <div ><img class="qr"src="qr.png"  alt="" style="height: 80px; width: 5vw;"></div>
             <div class="link">
            <a href="https://gw.alicdn.com/imgextra/i2/O1CN01da6D0K1Khogk708ZP_!!6000000001196-0-tps-150-150.jpg"><img id="appstore" src="appstore.png" alt=""></a>
-           <a href="https://play.google.com/store/apps/details?id=com.daraz.android"><img src="googleplay.png" alt=""></a>
+           <a href="https://play.google.com/store/apps/details?id=com.daraz.android"><img id="google"src="googleplay.png" alt=""></a> 
            Download the app now!
            </div>
            
@@ -87,21 +90,49 @@
         
     </div>
     </div>
+    <!-- <div class="add">
+        <div class="top">
+        <img src="smalllogo.png" alt="">
+    Download the app
+    </div>
+    <div class="body">
+        <div class="color">
+
+            <span >4.8 Rating</span>
+            <span id="download">Download app</span>
+            <div class="icon">
+            <span id="delivery"><img src="delivery.png" alt=""><span>Free Delivery</span></span>
+            <span id="time"><img src="time.png" alt="">Limited Time</span>
+            </div>
+        </div>
+        <div class="app">
+            <div ><img class="qr"src="qr.png"  alt="" style="height: 80px; width: 5vw;"></div>
+            <div class="link">
+           <a href="https://gw.alicdn.com/imgextra/i2/O1CN01da6D0K1Khogk708ZP_!!6000000001196-0-tps-150-150.jpg"><img id="appstore" src="appstore.png" alt=""></a>
+           <a href="https://play.google.com/store/apps/details?id=com.daraz.android"><img id="google"src="googleplay.png" alt=""></a> 
+           Download the app now!
+           </div>
+           
+        </div>
+        
+    </div>
+    </div> -->
     </div>
     
     
-    </div>
+   
     </div>
     </div>
     <div id="modalContainer"></div>
     <div class="products">Just For You
-        <div class="card">
+        <div class="card" style="height: 25vh;">
             <img src="https://img.drz.lazcdn.com/static/np/p/92a6ec47ba06ddd0f266f9cedd1f66ca.jpg_400x400q80.jpg_.avif" alt="">
-            <div class="info">Foldable  and Protable Laptop Stand
-                <p id="price">Rs :850</p>
+            <div class="info" style="height: 33%;">Foldable  and Protable Laptop Stand
+                <div id="price">Rs :850</div>
             </div>
         </div>
     </div>
+     </div>
 </body>
 
 <script src="script.js"></script>

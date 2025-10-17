@@ -1,169 +1,157 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: rgb(235, 233, 233);
 }
 
-.container{
+.container {
     background-color: #fff;
     height: 100%;
     width: 100%;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-#head{
+.cover {
+    height: 80vh;
+}
+
+#head {
     display: flex;
     justify-content: end;
-   /* width: 80vw; */
-   /* margin-right: 160px; */
 }
 
-#input{
+#input {
     display: flex;
     justify-content: center;
     gap: 20px;
+    max-width: 1200px;
 }
 
-.box{
+.cart {
+    width: 5vw;
+}
+
+.box {
     display: flex;
     font-size: small;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  justify-content: end;
-  gap: 30px;
-  margin-top: 20px;
- color: white;
-width: 60vw;
- margin-right: 20px;
- 
+    justify-content: end;
+    gap: 5%;
+    margin-top: 20px;
+    color: white;
+    width: 60vw;
+    margin-right: 20px;
+}
 
-}
-.header{
+.header {
     background-color: #f85606;
-    height: 100%;
+    height: 15vh;
     width: 100%;
-    
-    
-    
-}
-.input{
+    padding-bottom: 10px;
     display: flex;
-    width: 80%;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.input {
+    display: flex;
+    width: 80vw;
+    height: 5vh;
+    min-height: 30px;
+    max-width: 1200px;
+    min-width: 200px;
     margin-left: 10%;
     padding-bottom: 20px;
     gap: 5%;
     margin-top: 10px;
     flex-wrap: wrap;
-    
-
 }
-.logo{
-    height: 40px;
+
+.logo {
+    height: 30px;
+    width: 10vw;
+    margin-left: 15%;
 }
-.searchbar{
-display: flex;
-justify-content: end;
 
-
-
+.searchbar {
+    display: flex;
+    justify-content: end;
 }
-input{
-    
+
+input {
     width: 50vw;
-    min-width: 200px;
-    max-width: 700px;
+    height: 5vh;
+    /* min-width: 200px; max-width: 700px; */
     padding-left: 10px;
     gap: 10px;
     border-radius: 5px;
     border: none;
 }
-.searchlogo{
+
+.searchlogo {
     height: 20px;
     width: 23px;
 }
-#login{
-    color: white;
-    text-decoration: none;
-}
-#signup{
+
+#login {
     color: white;
     text-decoration: none;
 }
 
-.slider img{
-    
-    height: 400px;
+#signup {
+    color: white;
+    text-decoration: none;
+}
+
+.slider img {
+    height: 60vh;
     width: 60vw;
-  
     object-fit: cover;
-     
-    
-}
-.add{
-    
-   background: linear-gradient(135deg, #ffffff, #eaba9a); /* faint orange gradient */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    height: 380px;
-    width: 16vw;   
-    margin-bottom: 20px;
 }
 
-.top{
+.slider {
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-.add img{
-    height: 49px;
-    width: 40px;
-}
-
-.slider{
-    display: flex;
-    align-items: center;
+    flex-direction: row;
+    /* align-items: center; */
     justify-content: center;
     position: relative;
-    
-}
-.slide{
-    display: inline-block;
-    position: relative;
-    
 }
 
-.btn{
-    
+.slide {
+    display: inline-block;
+    position: relative;
+}
+
+.btn {
     position: absolute;
     top: 40%;
     transform: translateY(50%);
-    border:black;
+    border: black;
     background-color: #8c7474;
     height: 40px;
-    width: 40px;  
- 
+    width: 40px;
 }
 
-#prev{
-  left: 0;
-   background-color: rgb(203, 187, 187);
- border-radius: 0 20px 20px 0;
- 
-}
-#next{
-
-   right: 0;
-  background-color: rgb(203, 187, 187);
- border-radius: 20px 0 0 20px;
-
+#prev {
+    left: 0;
+    background-color: rgb(203, 187, 187);
+    border-radius: 0 20px 20px 0;
 }
 
-.signupform{
+#next {
+    right: 0;
+    background-color: rgb(203, 187, 187);
+    border-radius: 20px 0 0 20px;
+}
+
+.signupform {
     background-color: white;
     height: 40vh;
-   min-width: 35vw;
+    min-width: 35vw;
     color: white;
     box-sizing: border-box;
     padding: 20px;
@@ -173,25 +161,20 @@ input{
     align-items: center;
     border-radius: 10px;
     border: 2px solid orange;
-   
-    
 }
 
-.signupform input{
+.signupform input {
     width: 30vw;
-    display:block;
+    display: block;
     color: rgb(0, 0, 0);
     background-color: white;
     height: 25px;
     padding: 5px;
     border: 2px solid rgb(197, 191, 191);
     padding-left: 9px;
-    
-    
 }
 
-.snup{
-    
+.snup {
     height: 100%;
     width: 100%;
     display: flex;
@@ -199,13 +182,11 @@ input{
     align-items: center;
     margin-top: 5%;
     margin-bottom: 5%;
-   
 }
 
-.form{
-    
-}
-.submit{
+.form { }
+
+.submit {
     background-color: #f85606;
     color: white;
     padding: 3px;
@@ -215,9 +196,9 @@ input{
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
-    
 }
-.login{
+
+.login {
     background-color: #f85606;
     color: white;
     padding: 3px;
@@ -227,114 +208,168 @@ input{
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
-    
 }
 
-
-.blur{
+.blur {
     filter: blur(5px);
     transition: 0ms;
 }
 
-#username{
+#username {
     color: white;
-   
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-.card{
+.card {
     background-color: white;
-    height: 300px;
-    width: 220px;
+    height: 10%;
+    width: 15vw;
     margin: 20px;
-   border-radius: 5px;
- 
-   
-    
-    
-}
-.products{
-    margin-left: 100px;
-    font-size: 20px;
-}
-.card img{
-    height: 70%;
-    width: 100%;
-   
+    border-radius: 5px;
 }
 
-#price{
+.products {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.card img {
+    height: 90%;
+    width: 100%;
+}
+
+#price {
     /* margin: 2px; */
     padding: 3px;
     color: red;
-    
-}
-.info{
-    padding: 5px;
 }
 
-.color{
-    background:linear-gradient(180deg, #ee441a, #d676e5);
+.info {
+    padding: 5px;
+    width: 95%;
+    background-color: gray;
     display: flex;
     flex-direction: column;
+    font-size: small;
+}
+
+.add {
+    background: linear-gradient(135deg, #ffffff, #eaba9a);
+    /* faint orange gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 10px; */
+    /* height: 100%; */
+    width: 5vw;
+    object-fit: cover;
+    /* margin-bottom: 20px; */
+    min-width: 16vw;
+    max-height: 400px;
+    display: inline-block;
+    position: relative;
+}
+
+.add img {
+    height: 39px;
+    width: 50px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    height: 10%;
+    /* gap: 10px; */
+    padding-top: 15px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.color {
+    background: linear-gradient(180deg, #ee441a, #d676e5);
+    display: flex;
+    align-content: center;
+    flex-direction: column;
     gap: 10px;
+    height: auto;
     padding: 10px;
     border-radius: 5px;
     color: white;
+    width: 100%;
     /* justify-content: center; */
 }
-.icon{
+
+.icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-   gap: 15px;
+    gap: 15px;
 }
-#download{
+
+#download {
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin: 5px; */
-   
 }
-#delivery{
+
+#delivery {
     display: flex;
     align-items: center;
     gap: 8px;
-    
-   
 }
-#time{
-       display: flex;
+
+#time {
+    display: flex;
     align-items: center;
     gap: 8px;
 }
-.app{
+
+.app {
     background: linear-gradient(90deg, #f8f5f5, #f9e7fc);
     display: flex;
-    gap: 10px;
-
-    padding: 15px;
-    height: 100%;
-    width: 88%;
-    
+    font-size: small;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
 }
-.link{
+
+.link {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 90px;
 }
-.link img{
-    width: 97px;
-    height: 23px;
+
+.link img {
+    width: 90%;
+    height: 55%;
     background-color: white;
     border-radius: 8px;
     border: 1px solid rgb(117, 114, 114);
 }
-.qr{
-   
-   
-   
+
+#google {
+    height: 30%;
+    width: 90%;
 }
 
+.body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qr img {
+    height: 10px;
+    width: 90%;
+}

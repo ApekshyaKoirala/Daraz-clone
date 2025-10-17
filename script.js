@@ -132,4 +132,9 @@ function removeComponent() {
      maincontent.classList.remove("blur");
 }
 
+const product = document.querySelectorAll("card")
+product.addEventListener("click", function (e) {
+  
+})
+
 
