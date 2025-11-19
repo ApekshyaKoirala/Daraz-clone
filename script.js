@@ -51,9 +51,8 @@ function show(componentFile) {
   fetch(componentFile)
     .then((res) => res.text())
       .then((data) => {
-        console.log("done")
-        container.innerHTML = data;
-          container.style.display = "block"
+       container.innerHTML = data;
+       container.style.display = "flex"; 
 
           const submitbtns = container.getElementsByClassName("submit");
           Array.from(submitbtns).forEach((submitbtn) => {
