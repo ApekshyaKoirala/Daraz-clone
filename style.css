@@ -240,7 +240,7 @@ a {
 .info {
     padding: 5px;
     width: 95%;
-    background-color: gray;
+    background-color: rgb(214, 222, 228);
     display: flex;
     flex-direction: column;
     font-size: small;
@@ -378,5 +378,25 @@ a {
     flex-direction: column;
     gap: 10px;
     z-index: 10000; 
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 28px;       
+    margin-left: 10vw;
+}
+
+.card {
+    background-color: rgb(244, 237, 237);
+    height: 25vh;       
+    flex: 1 1 200px;    
+    border-radius: 5px;
+}
+.you{
+    font-size: medium;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 10%;
 }
 
